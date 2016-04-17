@@ -27,7 +27,9 @@
 #pragma once
 #include <vector>
 #include <string>
-#include <windows.h>
+#ifndef __APPLE__
+  #include <windows.h>
+#endif
 #include <iso646.h>
 #include <cstdint>
 
@@ -63,7 +65,7 @@ const bool dirDown = false;
 #define generic_fgets fgetws
 #define generic_stat _wstat
 #define COPYDATA_FILENAMES COPYDATA_FILENAMESW
-
+#define TCHAR wchar_t
 typedef std::basic_string<TCHAR> generic_string;
 
 generic_string folderBrowser(HWND parent, const generic_string & title = TEXT(""), int outputCtrlID = 0, const TCHAR *defaultStr = NULL);

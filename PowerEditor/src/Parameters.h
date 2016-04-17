@@ -26,9 +26,9 @@
 // Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #pragma once
 
-#ifndef TINYXMLA_INCLUDED
-#include "tinyxmlA.h"
-#endif //TINYXMLA_INCLUDED
+//#ifndef TINYXMLA_INCLUDED
+//#include "tinyxmlA.h"
+//#endif //TINYXMLA_INCLUDED
 
 #ifndef TINYXML_INCLUDED
 #include "tinyxml.h"
@@ -43,7 +43,7 @@
 #endif //SCINTILLA_REF_H
 
 #ifndef TOOL_BAR_H
-#include "ToolBar.h"
+//#include "ToolBar.h"
 #endif //TOOL_BAR_H
 
 #ifndef USER_DEFINE_LANG_REFERENCE_H
@@ -145,6 +145,8 @@ const int COPYDATA_FILENAMESW = 2;
 #define DROPBOX_AVAILABLE 1
 #define ONEDRIVE_AVAILABLE 2
 #define GOOGLEDRIVE_AVAILABLE 4
+
+#define TCHAR wchar_t
 
 const TCHAR fontSizeStrs[][3] = {TEXT(""), TEXT("5"), TEXT("6"), TEXT("7"), TEXT("8"), TEXT("9"), TEXT("10"), TEXT("11"), TEXT("12"), TEXT("14"), TEXT("16"), TEXT("18"), TEXT("20"), TEXT("22"), TEXT("24"), TEXT("26"), TEXT("28")};
 

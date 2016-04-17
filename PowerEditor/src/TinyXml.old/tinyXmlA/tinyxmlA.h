@@ -59,7 +59,9 @@ distribution.
 #include <stdio.h>
 #include <assert.h>
 #include <string>
-#include <tchar.h>
+#ifndef __APPLE__
+  #include <tchar.h>
+#endif
 #include "Common.h"
 
 class TiXmlDocumentA;

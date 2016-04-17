@@ -34,40 +34,40 @@ SCINT_DIR		= $(NPP_DIR)/ScitillaComponent
 
 #TinyXml
 TIXML_DIR		= $(NPP_DIR)/TinyXml
- TIXMLA_DIR		= $(TIXML_DIR)/tinyXmlA
+ #TIXMLA_DIR		= $(TIXML_DIR)/tinyXmlA
 
 #uchardet
 UCHARDET_DIR	= $(NPP_DIR)/uchardet
 
 #WinControls
-WIN_DIR			= $(NPP_DIR)/WinControls
- ABOUT_DIR		= $(WIN_DIR)/AboutDlg
- ANSICHAR_DIR	= $(WIN_DIR)/AnsiCharPanel
- CLIPBOARD_DIR	= $(WIN_DIR)/ClipboardHistory
- CONTEXT_DIR	= $(WIN_DIR)/ContextMenu
- COLOUR_DIR		= $(WIN_DIR)/ColourPicker
- DOCKING_DIR	= $(WIN_DIR)/DockingWnd
- DOCMAP_DIR		= $(WIN_DIR)/DocumentMap
- FINDCHARS_DIR	= $(WIN_DIR)/FindCharsInRange
- FUNCLIST_DIR	= $(WIN_DIR)/FunctionList
- GRID_DIR		= $(WIN_DIR)/Grid
- IMLIST_DIR		= $(WIN_DIR)/ImageListSet
- OPENSAVE_DIR	= $(WIN_DIR)/OpenSaveFileDialog
- PREFERENCE_DIR	= $(WIN_DIR)/Preference
- PRJPANEL_DIR	= $(WIN_DIR)/ProjectPanel
- SHORTCUT_DIR	= $(WIN_DIR)/shortcut
- SPLITTER_DIR	= $(WIN_DIR)/SplitterContainer
- STATICDLG_DIR	= $(WIN_DIR)/StaticDialog
-  RUNDLG_DIR	= $(STATICDLG_DIR)/RunDlg
- STATUSBAR_DIR	= $(WIN_DIR)/StatusBar
- TABBAR_DIR		= $(WIN_DIR)/TabBar
- TASKLIST_DIR	= $(WIN_DIR)/TaskList
+#WIN_DIR			= $(NPP_DIR)/WinControls
+ #ABOUT_DIR		= $(WIN_DIR)/AboutDlg
+ #ANSICHAR_DIR	= $(WIN_DIR)/AnsiCharPanel
+ #CLIPBOARD_DIR	= $(WIN_DIR)/ClipboardHistory
+ #CONTEXT_DIR	= $(WIN_DIR)/ContextMenu
+ #COLOUR_DIR		= $(WIN_DIR)/ColourPicker
+ #DOCKING_DIR	= $(WIN_DIR)/DockingWnd
+ #DOCMAP_DIR		= $(WIN_DIR)/DocumentMap
+ #FINDCHARS_DIR	= $(WIN_DIR)/FindCharsInRange
+ #FUNCLIST_DIR	= $(WIN_DIR)/FunctionList
+ #GRID_DIR		= $(WIN_DIR)/Grid
+ #IMLIST_DIR		= $(WIN_DIR)/ImageListSet
+ #OPENSAVE_DIR	= $(WIN_DIR)/OpenSaveFileDialog
+ #PREFERENCE_DIR	= $(WIN_DIR)/Preference
+ #PRJPANEL_DIR	= $(WIN_DIR)/ProjectPanel
+ #SHORTCUT_DIR	= $(WIN_DIR)/shortcut
+ #SPLITTER_DIR	= $(WIN_DIR)/SplitterContainer
+ #STATICDLG_DIR	= $(WIN_DIR)/StaticDialog
+ # RUNDLG_DIR	= $(STATICDLG_DIR)/RunDlg
+ #STATUSBAR_DIR	= $(WIN_DIR)/StatusBar
+ #TABBAR_DIR		= $(WIN_DIR)/TabBar
+ #TASKLIST_DIR	= $(WIN_DIR)/TaskList
  TOOLBAR_DIR	= $(WIN_DIR)/ToolBar
- TOOLTIP_DIR	= $(WIN_DIR)/ToolTip
- TRAYICON_DIR	= $(WIN_DIR)/TrayIcon
+ #TOOLTIP_DIR	= $(WIN_DIR)/ToolTip
+ #TRAYICON_DIR	= $(WIN_DIR)/TrayIcon
  # TREEVIEW_DIR	= $(WIN_DIR)/TreeView
- VERTFILE_DIR	= $(WIN_DIR)/VerticalFileSwitcher
- WINDOWSDLG_DIR	= $(WIN_DIR)/WindowsDlg
+ #VERTFILE_DIR	= $(WIN_DIR)/VerticalFileSwitcher
+ #WINDOWSDLG_DIR	= $(WIN_DIR)/WindowsDlg
 
 
 # Sources:
@@ -216,7 +216,7 @@ DIRSEP = \\
 RM = del
 CP = copy /Y
 else
-CROSS_COMPILE ?= i686-w64-mingw32-
+CROSS_COMPILE ?= 
 DIRSEP = /
 RM = rm -f
 CP = cp
